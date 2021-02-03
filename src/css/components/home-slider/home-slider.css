@@ -1,0 +1,77 @@
+.home-slider .slider-blank {
+  flex: 0 0 230px;
+  max-width: 230px; }
+
+.home-slider .slider-main {
+  flex: 0 0 calc(100% - 241px - 260px);
+  max-width: calc(100% - 241px - 260px);
+  margin: 0 5px; }
+
+.home-slider #home-slider-main {
+  height: calc(100% - 85px); }
+  .home-slider #home-slider-main .owl-stage-outer,
+  .home-slider #home-slider-main .owl-stage,
+  .home-slider #home-slider-main .owl-item,
+  .home-slider #home-slider-main .item,
+  .home-slider #home-slider-main .carousel-image {
+    height: 100%; }
+  .home-slider #home-slider-main .owl-item .carousel-image {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .home-slider #home-slider-main .owl-item .carousel-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+
+.home-slider .slider-news {
+  flex: 0 0 260px;
+  max-width: 260px; }
+  .home-slider .slider-news .container {
+    padding: 0;
+    max-width: 100%;
+    width: 100%; }
+  .home-slider .slider-news .news-wrapper {
+    margin-bottom: 10px;
+    background: #fff; }
+    .home-slider .slider-news .news-wrapper .new-item, .home-slider .slider-news .news-wrapper .title {
+      padding: 5px 10px;
+      border-bottom: 1px solid #dee2e6; }
+    .home-slider .slider-news .news-wrapper a {
+      line-height: 1.5;
+      font-size: 13px; }
+    .home-slider .slider-news .news-wrapper .title {
+      color: #4c8cf5;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 600; }
+      .home-slider .slider-news .news-wrapper .title img {
+        width: 15px;
+        margin-right: 5px; }
+
+.home-slider #home-slider-control .control-item {
+  position: relative;
+  border-left: 1px solid #dee2e6;
+  background: #fff;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+  flex: 0 0 calc(100% / 5);
+  max-width: calc(100% / 5);
+  cursor: pointer; }
+  .home-slider #home-slider-control .control-item:first-of-type {
+    border-left: none; }
+  .home-slider #home-slider-control .control-item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ffc20a;
+    content: '';
+    transition: 0.3s ease;
+    opacity: 0; }
+  .home-slider #home-slider-control .control-item:hover:before, .home-slider #home-slider-control .control-item.active:before {
+    opacity: 1; }

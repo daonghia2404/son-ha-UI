@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.tu-khoa {
+  margin-bottom: 15px; }
+  .tu-khoa .card {
+    background: #fff;
+    padding: 15px 10px; }
+    .tu-khoa .card p, .tu-khoa .card a {
+      font-size: 15px;
+      line-height: 2; }
+    .tu-khoa .card a {
+      color: #4c8cf5;
+      padding: 0 10px; }
+      .tu-khoa .card a:before {
+        content: '•';
+        margin: 0 5px;
+        color: #4c8cf5; }

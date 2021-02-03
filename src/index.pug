@@ -1,0 +1,119 @@
+extend layout.pug
+include includes/list-products
+include includes/banner-image
+
+block pages
+  -
+    const dataProducts = [
+      {
+        title: 'Bể nước đứng Sơn Hà 2000L (Φ1140)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Sơn Hà 2000L đứng( Φ1380)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L ngang',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L đứng',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Inox Sơn Hà 1000L ngang (Φ960) - SHN1000F960',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn Inox Sơn Hà đứng 1000L (Φ960) - SHD1000F960',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Inox Sơn Hà 5000L ngang (Φ1420)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước inox Sơn Hà ngang SHN 1350 (Φ1050)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Inox Sơn Hà 1200L ngang (Φ980)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Inox Sơn Hà 2500L ngang (Φ1380)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+    ]
+
+  include includes/header-category
+
+  include includes/home-slider
+
+  .banner-three-image
+    .container
+      .row
+        .col-lg-4
+          .banner-item
+            img(src="./images/banner-image-3.jpg", alt="")
+        .col-lg-4
+          .banner-item
+            img(src="./images/banner-image-4.jpg", alt="")
+        .col-lg-4
+          .banner-item
+            img(src="./images/banner-image-5.jpg", alt="")
+
+
+  +listProducts('Bồn nước Sơn hà', ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
+
+  +bannerImage('./images/banner-image-2.gif')
+
+  +listProducts('Bồn nước Sơn hà', ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
+
+  +bannerImage('./images/banner-image-1.jpg')
+
+  +listProducts('Bồn nước Sơn hà', ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
+
+  include includes/tab-component
+  include includes/tu-khoa

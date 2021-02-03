@@ -1,0 +1,35 @@
+@import '../../variables/variables.scss';
+
+.header-category {
+  background: $primary;
+  margin-bottom: 10px;
+  .category-item {
+    position: relative;
+    max-width: 230px;
+    flex: 0 0 230px;
+    &.active {
+      .category-megamenu {
+        display: block;
+      }
+    }
+  }
+  .link-item {
+    height: 40px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: $white;
+    cursor: pointer;
+    white-space: nowrap;
+    img {
+      width: 15px;
+      margin-right: 10px;
+    }
+    &.active,
+    &:hover {
+      background: $primary-dark;
+      color: $white !important;
+    }
+  }
+}

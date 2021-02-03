@@ -1,0 +1,147 @@
+-
+  const dataCategory = [
+    {
+      link: '#',
+      title: 'Bồn Nước Sơn Hà',
+      child: [
+        {
+          link: '#',
+          title: 'Bồn Inox Sơn Hà',
+          child: [
+            { link: '#', title: 'Bồn Nước Inox Đứng', child: [], },            
+            { link: '#', title: 'Bồn Nước Inox Ngang', child: [], },            
+          ],
+        },
+        {
+          link: '#',
+          title: 'Bồn Nhựa Sơn Hà',
+          child: [
+            { link: '#', title: 'Bồn Nước Nhựa Đứng', child: [], },            
+            { link: '#', title: 'Bồn Nước Nhựa Ngang' , child: [],},            
+          ],
+        },
+        {
+          link: '#',
+          title: 'Bể ngầm Sơn Hà',
+          child: [],
+        },
+        {
+          link: '#',
+          title: 'Bể ngầm - Bể treo Inox',
+          child: [],
+        },
+        {
+          link: '#',
+          title: 'Bể nước Công nghiệp',
+          child: [],
+        },
+        {
+          link: '#',
+          title: 'Bồn Toàn Mỹ Sơn Hà',
+          child: [
+            { link: '#', title: 'Bồn Nước Toàn Mỹ Đứng', child: [], },            
+            { link: '#', title: 'Bồn Nước Toàn Mỹ Ngang', child: [], },            
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      title: 'Thái Dương Năng Sơn Hà',
+      child: [
+        { link: '#', title: 'Thái Dương Năng Gold', child: [], },
+        { link: '#', title: 'Thái Dương Năng Sliver', child: [], },
+        { link: '#', title: 'Thái Dương Năng Titan 316', child: [], },
+        { link: '#', title: 'Thái Dương Năng Tấm phẳng', child: [], },
+        { link: '#', title: 'Thái Dương Năng Công nghiệp', child: [], },
+        { link: '#', title: 'Thái Dương Năng ECO', child: [], },
+      ],
+    },
+    {
+      link: '#',
+      title: 'Bồn Tự Hoại SEPTIC',
+      child: [],
+    },
+    {
+      link: '#',
+      title: 'Chậu Rửa bát Sơn Hà',
+      child: [
+        { link: '#', title: 'Chậu Rửa Inox Cao Cấp', child: [], },
+        { link: '#', title: 'Vòi Chậu rửa chén', child: [], },
+        { link: '#', title: 'Chậu rửa một hố', child: [], },
+        { link: '#', title: 'Chậu rửa hai hố', child: [], },
+        { link: '#', title: 'Chậu rửa liền khối', child: [], },
+      ],
+    },
+    {
+      link: '#',
+      title: 'Bình nước nóng Sơn Hà',
+      child: [
+        { link: '#', title: 'Bình nước nóng SHI ngang', child: [], },
+        { link: '#', title: 'Bình nước nóng SHI vuông', child: [], },
+      ],
+    },
+    {
+      link: '#',
+      title: 'Điện NLMT Áp mái',
+      child: [],
+    },
+    {
+      link: '#',
+      title: 'Bể lắp ghép Sơn Hà',
+      child: [
+        { link: '#', title: 'Bể lắp ghép Inox', child: [], },
+        { link: '#', title: 'Bể lắp ghép Composite', child: [], },
+      ],
+    },
+    {
+      link: '#',
+      title: 'Thiết bị nhà bếp Sơn Hà',
+      child: [
+        { link: '#', title: 'Bếp Điện Từ', child: [], },
+        { link: '#', title: 'Máy Hút Mùi', child: [], },
+      ],
+    },
+    {
+      link: '#',
+      title: 'Máy lọc nước sơn hà',
+      child: [
+        { link: '#', title: 'Máy lọc nước RO không tủ', child: [], },
+        { link: '#', title: 'Cây nước nóng lạnh', child: [], },
+        { link: '#', title: 'Máy lọc nước RO có tủ', child: [], },
+        { link: '#', title: 'Link kiện máy lọc nước', child: [], },
+      ],
+    },
+    {
+      link: '#',
+      title: 'Sen vòi',
+      child: [],
+    },
+  ]
+
+.category-megamenu
+  each item, index in dataCategory
+    .list-wrap
+      a(href="#").category-link.flex.items-center.justify-between
+        img(src=`./images/category-icon-${index + 1}.jpg`, alt="").icon
+        span= item.title
+        if item.child.length !== 0
+          img(src="./images/icon-angle-right.svg", alt="").arrow
+
+      if item.child.length !== 0
+        .category-submenu
+          each lv1, indexLv1 in item.child
+            .list-wrap
+              a(href="#").flex.items-center.justify-between.category-link
+                span= lv1.title
+                if lv1.child.length !== 0
+                  img(src="./images/icon-angle-right.svg", alt="").arrow
+
+              if lv1.child.length !== 0
+                .category-submenu
+                  each lv2, indexLv2 in lv1.child
+                    .list-wrap
+                      a(href="#").flex.items-center.justify-between.category-link
+                        span= lv2.title
+                        if lv2.child.length !== 0
+                          img(src="./images/icon-angle-right.svg", alt="").arrow

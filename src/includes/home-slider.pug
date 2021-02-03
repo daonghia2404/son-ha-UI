@@ -1,0 +1,33 @@
+.home-slider
+  .container
+    .flex
+      .slider-blank
+      .slider-main
+        .owl-carousel#home-slider-main
+          each item in [1,2,3,4,5]
+            .item
+              .carousel-image
+                img(src=`./images/carousel-image-${item}.jpg`, alt="")
+
+        #home-slider-control.flex.owl-dots
+          .control-item.flex.items-center.justify-center.owl-dot Hệ thống phân phối tập đoàn Sơn Hà
+          .control-item.flex.items-center.justify-center.owl-dot Ưu đãi sốc 30% Thái Dương Năng
+          .control-item.flex.items-center.justify-center.owl-dot Bể phốt thông minh Septic
+          .control-item.flex.items-center.justify-center.owl-dot Thiết bị nhà bếp Sơn Hà
+          .control-item.flex.items-center.justify-center.owl-dot Bể ngầm Sơn Hà
+
+
+      .slider-news
+        .news-wrapper
+          h2.title.flex.items-center
+            img(src="./images/icon-news.svg", alt="")
+            |Tin tức nổi bật
+          .new-item
+            a(href="#") Thái dương năng | Máy nước nóng năng lượng mặt trời loại nào tốt?
+          .new-item
+            a(href="#") Cấu tạo & Nguyên lý hoạt động bình Thái Dương Năng Sơn Hà
+          .new-item
+            a(href="#") [BẬT MÍ] Có nên dùng máy nước nóng năng lượng mặt trời không?
+
+        +bannerImage('./images/banner-image-3.jpg')
+        +bannerImage('./images/banner-image-4.jpg')

@@ -1,0 +1,44 @@
+/* ===============================================================================
+   Table Of Content
+   ===============================================================================
+   1. General
+   2. Layout
+   3. Components
+   4. Pages
+*/
+
+
+/* ===============================================================================
+   1. General
+   ===============================================================================
+*/
+@import './fonts/fonts.scss';
+@import './layout/grid/grid.scss';
+@import './variables/variables.scss';
+@import './library/owl.carousel.min.css';
+@import './base/base.scss';
+
+/* ===============================================================================
+   2. Layout
+   ===============================================================================
+*/
+@import './layout/header/header.scss';
+@import './layout/footer/footer.scss';
+
+/* ===============================================================================
+   3. Components
+   ===============================================================================
+*/
+@import './components/tu-khoa/tu-khoa.scss';
+@import './components/tab-component/tab-component.scss';
+@import './components/list-products/list-products.scss';
+@import './components/banner-image/banner-image.scss';
+@import './components/home-slider/home-slider.scss';
+@import './components/header-category/header-category.scss';
+@import './components/category-megamenu/category-megamenu.scss';
+
+/* ===============================================================================
+   4. Pages
+   ===============================================================================
+*/
+@import './pages/home/home.scss';

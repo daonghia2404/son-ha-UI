@@ -1,0 +1,71 @@
+header.header .header-top {
+  background: #b62329; }
+  header.header .header-top .banner-header-item {
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3); }
+    header.header .header-top .banner-header-item img {
+      width: 100%;
+      object-fit: cover; }
+
+header.header .header-nav {
+  background: #f3f3f3;
+  padding: 5px 0; }
+  header.header .header-nav .header-nav-item img {
+    width: 15px;
+    margin-right: 10px; }
+  header.header .header-nav .header-nav-item a.nav-link {
+    padding-left: 20px;
+    border-left: 1px solid #a7a7a7;
+    font-size: 15px;
+    line-height: 1;
+    color: #333; }
+    header.header .header-nav .header-nav-item a.nav-link:not(:last-of-type) {
+      padding-right: 20px; }
+  header.header .header-nav .header-nav-item a.welcome-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #b62329; }
+
+header.header .header-main {
+  background: #fff;
+  padding: 10px 0; }
+  header.header .header-main .header-logo {
+    max-width: 240px; }
+    header.header .header-main .header-logo img {
+      width: 100%; }
+  header.header .header-main .header-search {
+    flex: 1;
+    width: 100%;
+    margin: 0 25px; }
+    header.header .header-main .header-search form {
+      border: 1px solid #b62329; }
+      header.header .header-main .header-search form input {
+        padding: 5px 0 5px 5px;
+        font-size: 14px;
+        height: 42px;
+        width: 100%; }
+      header.header .header-main .header-search form button {
+        width: 42px;
+        height: 42px;
+        background: #b62329;
+        cursor: pointer; }
+        header.header .header-main .header-search form button img {
+          width: 20px; }
+  header.header .header-main .header-right .right-item {
+    margin-left: 10px; }
+    header.header .header-main .header-right .right-item img {
+      width: 35px;
+      margin-right: 10px; }
+      header.header .header-main .header-right .right-item img.caret {
+        margin-left: 5px;
+        margin-right: 0;
+        width: 10px; }
+    header.header .header-main .header-right .right-item .item-info p {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 0;
+      margin-bottom: 5px; }
+    header.header .header-main .header-right .right-item .item-info a {
+      color: #b62329;
+      font-size: 20px;
+      font-weight: 600; }

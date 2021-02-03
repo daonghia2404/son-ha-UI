@@ -1,0 +1,28 @@
+mixin listProducts(title, listsCategory, listProducts)
+  .list-product-component
+    .container
+      .list-header.flex.items-center.justify-between
+        h2.flex.items-center
+          img(src="./images/bg-title.png", alt="").bg-title
+          img(src="./images/icon-caret-square.png", alt="").icon
+          span= title
+        .category-list.flex
+          each item in listsCategory
+            a(href="#")= item
+        .header-see-more.flex.items-center
+          a(href="#") Xem thêm
+          img(src="./images/icon-angle-right-blue.svg", alt="")
+      
+      .list-items.flex.flex-wrap
+        each item in listProducts
+          a(href="#").product-item
+            .product-image
+              img(src=`${item.image}`, alt="")
+              .product-sale.flex.items-center.justify-center
+                img(src="./images/icon-sale.png", alt="")
+                span= item.sale
+            .product-info
+              h2.product-name= item.title
+              p.product-price= item.price
+              del.product-old-price= item.oldPrice
+              p.product-description= item.des

@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Son Ha
+
+    //- Logo Icon
+    link(rel="shortcut icon" type="image/x-icon" href="")
+
+    //- Taildwind CSS
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    //- Style CSS
+    link(rel="stylesheet" type="text/css" href="./css/main.css")
+
+    block head
+
+  body
+    include includes/header
+
+    block pages
+
+    include includes/footer
+
+    block script
+    //- jQuery
+    <script src="./js/jquery.min.js"></script>
+    //- Owl Carousel
+    <script src="./js/owl.carousel.min.js"></script>
+    //- Java Script 
+    script(src="./js/main.js")

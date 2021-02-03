@@ -1,0 +1,141 @@
+@import '../../variables/variables.scss';
+
+footer.footer {
+  .footer-bottom {
+    background: $body;
+    padding: 8px 0;
+    p {
+      font-size: 12px;
+      color: $gray-text;
+      margin-right: 10px;
+    }
+    img {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
+  .footer-hotline {
+    background: $primary;
+    padding: 10px 0;
+    .hotline-item {
+      flex: 0 0 calc(100% / 3);
+      max-width: calc(100% / 3);
+      img {
+        width: 40px;
+        margin-right: 15px;
+      }
+      p {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: $white;
+      }
+      a {
+        font-size: 24px;
+        color: $white;
+        font-weight: 600;
+      }
+      &:nth-of-type(2) {
+        border-left: 1px solid #db4f59;
+        border-right: 1px solid #db4f59;
+      }
+    }
+  }
+
+  .footer-main {
+    background: $white;
+    padding: 15px 0;
+    h4 {
+      font-size: 14px;
+      color: $blue;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    a {
+      font-size: 15px;
+      display: block;
+      margin-bottom: 10px;
+      strong {
+        padding-left: 5px;
+      }
+    }
+    img {
+      width: 100%;
+      &.bo-cong-thuong {
+        max-width: 160px;
+      }
+    }
+    form {
+      input {
+        width: 100%;
+        border: 1px solid $border;
+        font-size: 14px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      button {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $white;
+        padding: 0 12px;
+        border-radius: 5px;
+        background: $blue-dark;
+        font-size: 14px;
+      }
+    }
+    .social-network {
+      a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 10px 0;
+      }
+    }
+  }
+
+  .footer-address {
+    background: $white;
+    .container {
+      border-top: 1px solid $border-light;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    h2 {
+      text-transform: uppercase;
+      color: $white;
+      background: $primary;
+      font-size: 14px;
+      font-weight: 600;
+      height: 40px;
+      margin-bottom: 15px;
+    }
+    .address-item-group {
+      .address-item {
+        margin-bottom: 10px;
+        .address-image {
+          max-width: 125px;
+          flex: 0 0 125px;
+          margin-right: 10px;
+          height: 80px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        p {
+          font-size: 15px;
+          a {
+            color: $primary;
+            img {
+              margin-left: 5px;
+              width: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
