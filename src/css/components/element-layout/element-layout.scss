@@ -1,0 +1,94 @@
+@import '../../variables/variables.scss';
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0 0 0 0 #d43035b0;
+  }
+  100% {
+    box-shadow: 0 0 0 20px #d82f3400;
+  }
+}
+
+@keyframes boxShadow2 {
+  0% {
+    box-shadow: 0 0 0 0 #00c8ff7c;
+  }
+  100% {
+    box-shadow: 0 0 0 20px #00c8ff25;
+  }
+}
+
+.hotline-element {
+  position: fixed;
+  z-index: 50;
+  left: 30px;
+  bottom: 100px;
+  &:hover {
+    .hotline-phone {
+      width: 150px;
+      padding: 10px 10px 10px 30px;
+    }
+  }
+  .hotline-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $primary;
+    animation: boxShadow 2s linear infinite;
+    position: relative;
+    z-index: 2;
+
+    img {
+      margin-top: 5px;
+      width: 60%;
+      animation: shake 0.5s linear infinite;
+    }
+  }
+  .hotline-phone {
+    background: $primary-light;
+    transform: translateX(-20px);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: $white;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s ease;
+    width: 0;
+    padding: 10px 0 10px 0;
+    overflow: hidden;
+  }
+}
+
+.messenger-element {
+  position: fixed;
+  z-index: 50;
+  right: 30px;
+  bottom: 40px;
+  .hotline-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $blue;
+    animation: boxShadow2 2s linear infinite;
+    position: relative;
+    z-index: 2;
+
+    img {
+      width: 60%;
+    }
+  }
+}

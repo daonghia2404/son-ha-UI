@@ -1,0 +1,7 @@
+.nav-redirect {
+  padding: 10px 0;
+  margin-bottom: 10px; }
+  .nav-redirect a, .nav-redirect span {
+    display: block;
+    font-size: 15px;
+    margin-right: 10px; }

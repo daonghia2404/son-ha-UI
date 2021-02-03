@@ -6,7 +6,9 @@
   width: 100%;
   background: #fff;
   height: auto;
-  padding: 3px; }
+  padding: 3px;
+  z-index: 10;
+  box-shadow: 1px 2px 1px 0px #d4d4d4; }
   .category-megamenu .category-submenu {
     position: absolute;
     top: 0;

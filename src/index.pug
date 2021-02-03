@@ -1,6 +1,7 @@
 extend layout.pug
 include includes/list-products
 include includes/banner-image
+include includes/header-category
 
 block pages
   -
@@ -87,7 +88,7 @@ block pages
       },
     ]
 
-  include includes/header-category
+  +headerCategory(true)
 
   include includes/home-slider
 

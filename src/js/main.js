@@ -1,6 +1,7 @@
 window.onload = () => {
   tabComponent.init()
   homeCarousel.init()
+  categoryDropdown.init()
 }
 
 const tabComponent = {
@@ -42,4 +43,18 @@ const homeCarousel = {
       margin: 0,
     });
   }
+}
+
+const categoryDropdown = {
+  init: function() {
+    this.setupActionDropdown()
+  },
+  setupActionDropdown: function() {
+    const btn = document.querySelector('#category-btn')
+    if (btn) {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active')
+      })
+    }
+  },
 }

@@ -36,9 +36,14 @@
 @import './components/home-slider/home-slider.scss';
 @import './components/header-category/header-category.scss';
 @import './components/category-megamenu/category-megamenu.scss';
+@import './components/nav-redirect/nav-redirect.scss';
+@import './components/pagination/pagination.scss';
+@import './components/element-layout/element-layout.scss';
 
 /* ===============================================================================
    4. Pages
    ===============================================================================
 */
 @import './pages/home/home.scss';
+@import './pages/category-detail/category-detail.scss';
+@import './pages/product-detail/product-detail.scss';

@@ -1,24 +1,25 @@
-.header-category
-  .container
-    .flex.items-center
-      .category-item.flex.items-center.link-item.active
-        img(src="./images/icon-bar.svg", alt="")
-        |Danh mục sản phẩm
-        include ./category-megamenu
+mixin headerCategory(isShowCategory)
+  .header-category
+    .container
+      .flex.items-center
+        .category-item.flex.items-center.link-item(class=`${isShowCategory ? 'active' : ''}`)#category-btn
+          img(src="./images/icon-bar.svg", alt="")
+          |Danh mục sản phẩm
+          include ./category-megamenu
 
-      .list-link-items.flex
-        a(href="#").link-item.flex.items-center
-          img(src="./images/icon-circle-outline.svg", alt="")
-          |Hệ thống phân phối
-        a(href="#").link-item.flex.items-center
-          img(src="./images/icon-fire.svg", alt="")
-          |Các giải thưởng
-        a(href="#").link-item.flex.items-center
-          img(src="./images/icon-fire.svg", alt="")
-          |Quá trình phát triển
-        a(href="#").link-item.flex.items-center
-          img(src="./images/icon-lightning.svg", alt="")
-          |Tầm nhìn sứ mệnh
-        a(href="#").link-item.flex.items-center
-          img(src="./images/icon-lightning.svg", alt="")
-          |Nhà máy sản xuất
+        .list-link-items.flex
+          a(href="#").link-item.flex.items-center
+            img(src="./images/icon-circle-outline.svg", alt="")
+            |Hệ thống phân phối
+          a(href="#").link-item.flex.items-center
+            img(src="./images/icon-fire.svg", alt="")
+            |Các giải thưởng
+          a(href="#").link-item.flex.items-center
+            img(src="./images/icon-fire.svg", alt="")
+            |Quá trình phát triển
+          a(href="#").link-item.flex.items-center
+            img(src="./images/icon-lightning.svg", alt="")
+            |Tầm nhìn sứ mệnh
+          a(href="#").link-item.flex.items-center
+            img(src="./images/icon-lightning.svg", alt="")
+            |Nhà máy sản xuất

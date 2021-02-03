@@ -1,0 +1,11 @@
+mixin navRedirect(navLists)
+  .nav-redirect
+    .container
+      .flex.flex-wrap
+        a(href="#") Trang chủ
+        if (navLists.length !== 0)
+          span /
+          each item, index in navLists
+            a(href="#")= item
+            if index !== navLists.length - 1
+              span /
