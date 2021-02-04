@@ -1,6 +1,6 @@
 window.onload = () => {
   tabComponent.init()
-  homeCarousel.init()
+  carousel.init()
   categoryDropdown.init()
 }
 
@@ -23,12 +23,13 @@ const tabComponent = {
   }
 }
 
-const homeCarousel = {
+const carousel = {
   init: function() {
     this.setupCarouselControl()
+    this.setupProductCarousel()
   },
   setupCarouselControl: function () {
-    $("#home-slider-main").owlCarousel({
+    const target = $("#home-slider-main").owlCarousel({
       responsive: {
         0: { items: 1 },
       },
@@ -41,6 +42,24 @@ const homeCarousel = {
       dotsContainer: '#home-slider-control',
       nav: false,
       margin: 0,
+    });
+    $('#home-slider-control .owl-dot').click(function () {
+      target.trigger('to.owl.carousel', [$(this).index(), 300]);
+    });
+  },
+  setupProductCarousel: function() {
+    const target = $("#product-carousel").owlCarousel({
+      responsive: {
+        0: { items: 1 },
+      },
+      loop: false,
+      dots: true,
+      dotsContainer: '#product-carousel-control',
+      nav: false,
+      margin: 0,
+    });
+    $('#product-carousel-control .owl-dot').click(function () {
+      target.trigger('to.owl.carousel', [$(this).index(), 300]);
     });
   }
 }

@@ -65,8 +65,68 @@ a {
   }
 }
 
+.primary-color {
+  color: $primary;
+}
+.blue-color {
+  color: $blue;
+}
+
 .line {
   height: 1px;
   margin: 20px 0;
   background: $border-light;
+}
+
+.product-btn {
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #212529;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  outline: none;
+  background: transparent;
+  h6 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    img {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+  p {
+    font-size: 13px;
+    text-align: center;
+    margin: 0 !important;
+  }
+  &.blue {
+    background: $blue;
+    h6, p {
+      color: $white;
+    }
+  }
+  &.yellow {
+    background: $yellow;
+  }
+  &.primary {
+    background: $primary;
+    h6, p {
+      color: $white;
+    }
+  }
+}
+
+.label-component {
+  font-size: 15px;
+  padding: 2px 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  &.primary-color {
+    background: $primary;
+    color: $white;
+  }
 }
