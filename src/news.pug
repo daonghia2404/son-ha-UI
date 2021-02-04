@@ -1,0 +1,122 @@
+extend layout.pug
+include includes/header-category
+include includes/list-products
+include includes/nav-redirect
+include includes/news-component
+include includes/new-block
+
+block pages
+  -
+    const dataProducts = [
+      {
+        title: 'Bể nước đứng Sơn Hà 2000L (Φ1140)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Sơn Hà 2000L đứng( Φ1380)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L ngang',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L đứng',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Inox Sơn Hà 1000L ngang (Φ960) - SHN1000F960',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+    ]
+
+  +headerCategory()
+
+  +navRedirect(['Tin tức'])
+
+  .news-page
+    .container
+      .new-quick-links.flex.items-center
+        a(href="#").active Tin tức mới 
+        a(href="#") Tư vấn
+        a(href="#") Công nghệ - Kỹ thuật
+        a(href="#") Ưu đãi & Khuyến mãi
+
+      .news-main
+        .row
+          .col-8
+            .news-main-wrapper
+              .news-overview
+                +newBlock('Thái dương năng | Máy nước nóng năng lượng mặt trời loại nào tốt', '25-12-2020, 11:34 AM')
+                .row
+                  .col-4
+                    +newBlock('Cấu tạo & Nguyên lý hoạt động bình Thái Dương Năng Sơn Hà', '26-01-2021, 4:26 pm')
+                  .col-4
+                    +newBlock('[BẬT MÍ] Có nên dùng máy nước nóng năng lượng mặt trời không?', '22-10-2020, 5:06 pm')
+                  .col-4
+                    +newBlock('GIẢM GIÁ lên đến 30% khi mua COMBO BỒN NƯỚC + THÁI DƯƠNG NĂNG SƠN HÀ', '21-10-2020, 3:14 pm')
+
+              +newsComponent('Tư vấn')
+              +newsComponent('CÔNG NGHỆ - KỸ THUẬT')
+              +newsComponent('ƯU ĐÃI & KHUYẾN MÃI')
+
+          .col-4
+            .news-sidebar
+              h3.title Tin xem nhiều
+              ul.news-list
+                li.new-item.flex
+                  span 1
+                  a(href="#") Thái dương năng | Máy nước nóng năng lượng mặt trời loại nào tốt?
+                li.new-item.flex
+                  span 2
+                  a(href="#") Cấu tạo & Nguyên lý hoạt động bình Thái Dương Năng Sơn Hà
+                li.new-item.flex
+                  span 3
+                  a(href="#") [BẬT MÍ] Có nên dùng máy nước nóng năng lượng mặt trời không?
+                li.new-item.flex
+                  span 4
+                  a(href="#") GIẢM GIÁ lên đến 30% khi mua COMBO BỒN NƯỚC + THÁI DƯƠNG NĂNG SƠN HÀ
+                li.new-item.flex
+                  span 5
+                  a(href="#") Hướng dẫn sử dụng bồn nước Sơn Hà đúng cách
+
+              h3.title Sản phẩm liên quan
+              .list-product-component
+                .list-items.flex.flex-wrap
+                  each item in dataProducts
+                    a(href="#").product-item
+                      .product-image
+                        img(src=`${item.image}`, alt="")
+                        .product-sale.flex.items-center.justify-center
+                          img(src="./images/icon-sale.png", alt="")
+                          span= item.sale
+                      .product-info
+                        h2.product-name= item.title
+                        p.product-price= item.price
+                        del.product-old-price= item.oldPrice
+                        p.product-description= item.des
+
+
+
+  +listProducts('Sản phẩm đã xem', [], dataProducts)
+

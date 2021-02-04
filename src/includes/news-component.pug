@@ -1,0 +1,31 @@
+mixin newsComponent(title)
+  .news-component
+    .news-header.flex.items-center.justify-between
+      a(href="#").title= title
+      a(href="#").flex.items-center Xem tất cả >>
+
+    .news-component-main
+      .row
+        .col-6
+          a(href="#").news-item.big
+            .new-image
+              img(src="./images/new-image.jpg", alt="")
+            h2.new-title Cách chống nóng bồn nước inox Sơn Hà hiệu quả tuyệt đối
+            p Để thay thế cho bồn nước truyền thống và mang đến sự tiện nghi cho người dùng, bồn nước inox ngày càng được yêu thích và là sự ưu tiên số một của mọi nhà. Tuy nhiên để lựa chọn vị trí đặt bồn thích hợp để hạn chế nước nóng khi mùa hè thì không phải ai cũng biết.
+        .col-6
+          a(href="#").news-item.small
+            h2.new-title Mua bồn nước inox lắp ghép NHẤT ĐỊNH cần biết các điều này
+            .new-image.flex.items-start
+              img(src="./images/new-image.jpg", alt="")
+              p Phải đến 90% người dùng mua bồn nước inox lắp ghép không biết đến các đặc điểm này khiến mắc phải những sai lầm đáng tiếc khi sử dụng bể lắp ghép inox.
+
+          a(href="#").news-item.small
+            p Review 3 hãng thái dương năng nào tốt nhất | Máy năng lượng mặt trời
+          a(href="#").news-item.small
+            p Review [Gợi ý] Nên mua bình nóng lạnh giá bao nhiêu thì hợp lý?
+          a(href="#").news-item.small
+            p [Cập nhật] Bảng giá bồn nước Toàn Thắng mới nhất 2020
+          a(href="#").news-item.small
+            p Thái dương năng | Máy nước nóng năng lượng mặt trời loại nào tốt?
+          
+

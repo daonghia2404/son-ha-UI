@@ -1,0 +1,17 @@
+mixin listNews(title, dataNews)
+  .list-product-component.list-new-component
+    .container
+      .list-header.flex.items-center.justify-between
+        h2.flex.items-center
+          img(src="./images/bg-title.png", alt="").bg-title
+          img(src="./images/icon-caret-square.png", alt="").icon
+          span= title
+
+      .list-items.flex.flex-wrap
+        each item in dataNews
+          a(href="#").product-item
+            .product-image
+              img(src=`${item.image}`, alt="")
+            .product-info
+              h2.product-name= item.title
+              p.product-date= item.time

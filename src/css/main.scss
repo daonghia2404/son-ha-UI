@@ -39,6 +39,8 @@
 @import './components/nav-redirect/nav-redirect.scss';
 @import './components/pagination/pagination.scss';
 @import './components/element-layout/element-layout.scss';
+@import './components/news-component/news-component.scss';
+@import './components/new-block/new-block.scss';
 
 /* ===============================================================================
    4. Pages
@@ -47,3 +49,5 @@
 @import './pages/home/home.scss';
 @import './pages/category-detail/category-detail.scss';
 @import './pages/product-detail/product-detail.scss';
+@import './pages/news/news.scss';
+@import './pages/new-detail/new-detail.scss';

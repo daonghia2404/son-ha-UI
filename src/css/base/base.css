@@ -100,3 +100,64 @@ a {
   .label-component.primary-color {
     background: #b62329;
     color: #fff; }
+
+.quick-recommend-links {
+  padding: 10px;
+  background: #E1EEFF;
+  margin: 10px 0; }
+  .quick-recommend-links ul {
+    list-style: circle;
+    padding-left: 30px; }
+    .quick-recommend-links ul li {
+      padding: 8px 0;
+      font-size: 15px;
+      margin: 0 !important; }
+      .quick-recommend-links ul li a {
+        color: #4c8cf5;
+        font-size: 15px;
+        line-height: 1.5; }
+
+.editable-form-style h2 {
+  font-size: 25px;
+  margin: 20px 0;
+  font-weight: 600; }
+
+.editable-form-style h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0; }
+
+.editable-form-style p,
+.editable-form-style li {
+  line-height: 1.5;
+  font-size: 17px;
+  color: #333;
+  margin: 15px 0; }
+
+.editable-form-style ul {
+  list-style: circle;
+  padding-left: 30px;
+  margin: 10px 0; }
+  .editable-form-style ul li {
+    margin-bottom: 15px; }
+
+.editable-form-style a {
+  font-size: 17px;
+  font-weight: 600;
+  color: #4c8cf5; }
+
+.editable-form-style img {
+  margin: 20px 0;
+  width: 100%; }
+
+.editable-form-style table {
+  width: 100%;
+  margin: 20px 0; }
+  .editable-form-style table td {
+    padding: 0 15px;
+    border: 1px solid #dee2e6;
+    width: 50%; }
+
+.editable-form-style iframe {
+  width: 420px;
+  margin: 20px auto; }

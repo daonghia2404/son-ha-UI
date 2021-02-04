@@ -54,6 +54,7 @@
     }
   }
   .list-items {
+    background: $white;
     .product-item {
       flex: 0 0 calc(100% / 5);
       max-width: calc(100% / 5);
@@ -112,6 +113,21 @@
         @include ellipsis(2);
         font-size: 12px;
         color: $blue;
+      }
+    }
+  }
+  &.list-new-component {
+    .list-items {
+      .product-item {
+        border: none;
+        padding: 8px;
+        &:not(:last-of-type) {
+          border-right: 1px solid $border-light;
+        }
+        .product-date {
+          font-size: 15px;
+          color: $gray-dark;
+        }
       }
     }
   }

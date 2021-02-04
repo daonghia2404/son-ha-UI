@@ -1,0 +1,181 @@
+extend layout.pug
+include includes/header-category
+include includes/list-products
+include includes/nav-redirect
+include includes/news-component
+include includes/new-block
+include includes/list-news
+
+block pages
+  -
+    const dataProducts = [
+      {
+        title: 'Bể nước đứng Sơn Hà 2000L (Φ1140)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Sơn Hà 2000L đứng( Φ1380)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L ngang',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L đứng',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Inox Sơn Hà 1000L ngang (Φ960) - SHN1000F960',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+    ]
+
+    const dataNews = [
+      {
+        title: 'Bình nóng lạnh bị rò nước: Nguyên nhân và cách xử lý đơn giản tại nhà',
+        time: '02-02-2021, 5:52 pm',
+        image: './images/new-image.jpg',
+      },
+      {
+        title: 'Top 10 Thái dương năng tốt nhất hiện nay GIÁ chỉ từ 5 triệu',
+        time: '02-02-2021, 5:23 pm',
+        image: './images/new-image.jpg',
+      },
+      {
+        title: 'Nên xây bể hay mua bồn chứa nước để sử dụng?',
+        time: '02-02-2021, 5:11 pm',
+        image: './images/new-image.jpg',
+      },
+      {
+        title: 'Mua bồn nước inox lắp ghép NHẤT ĐỊNH cần biết các điều này',
+        time: '02-02-2021, 5:07 pm',
+        image: './images/new-image.jpg',
+      },
+    ]
+
+  +headerCategory()
+
+  +navRedirect(['Tin tức', 'Tư vấn'])
+
+  .news-page.new-detail-page
+    .container
+      .new-quick-links.flex.items-center
+        a(href="#").active Tin tức mới 
+        a(href="#") Tư vấn
+        a(href="#") Công nghệ - Kỹ thuật
+        a(href="#") Ưu đãi & Khuyến mãi
+
+      .row
+        .col-8
+          .new-detail-main.editable-form-style
+            h2(style="margin: 0;") Cách chống nóng bồn nước inox Sơn Hà hiệu quả tuyệt đối
+            p 11-11-2020, 7:42 am
+
+            .quick-recommend-links
+              ul
+                li #[a(href="#") Hướng dẫn sử dụng bồn nước Sơn hà đúng cách]
+                li #[a(href="#") Công dụng và tiêu chuẩn kỹ thuật bồn nước Sơn Hà inox]
+                li #[a(href="#") Khuyến cáo lắp đặt chân đế bồn nước inox Sơn Hà cho nhà và công trình]
+                li #[a(href="#") Mua thanh lý bồn nước cũ liệu có phải sự lựa chọn thông minh?]
+                li #[a(href="#") Nên mua bồn nước Sơn Hà ĐỨNG hay NẰM? (Ưu, nhược điểm)]
+
+            p #[strong Để thay thế cho bồn nước truyền thống và mang đến sự tiện nghi cho người dùng, bồn nước inox ngày càng được yêu thích và là sự ưu tiên số một của mọi nhà. Tuy nhiên để lựa chọn vị trí đặt bồn thích hợp để hạn chế nước nóng khi mùa hè thì không phải ai cũng biết.]
+
+            p 
+              |Vậy làm thế nào để tìm được vị trí thích hợp, bài viết sau đây sẽ chia sẻ cho bạn 
+              a(href="#")  cách chống nóng cho bồn nước inox 
+              |giúp bạn hiểu rõ và thực hiện phòng tránh cho nước không còn bị làm nóng.
+
+            img(src="./images/new-image.jpg", alt="")
+
+            h2.primary-color Nguyên nhân nước trong bồn inox bị nóng
+
+            p Có nhiều nguyên nhân làm bồn nước bị nóng khi trời vào hè. Tuy nhiên, 4 lý do chính dưới đây chủ yếu gây ra hiện tượng nước bị nóng bao gồm:
+
+            p #[strong Bồn nước bị nắng chiếu trực tiếp trên mái nhà]
+
+            p Đặt bồn nước trên mái nhà là nơi phổ biến lắp đặt téc của nhiều gia đình, bởi không gian rộng cũng như như vị trí đặt bồn phù hợp, tuy nhiên thường mái nhà không có mái che.
+
+            p Dẫn đến đặt bồn ngoài trời vào thời gian mùa hè hoặc lúc ánh nắng trực tiếp chiếu vào nước sẽ bị nóng lên. Do inox là chất dẫn nhiệt khá tốt, vì thế khi nhiệt độ xung quanh tăng cao, bồn nước sẽ hấp thụ nhiệt và làm nóng bồn. 
+
+            img(src="./images/new-image.jpg", alt="")
+            p.text-center.italic Nguyên nhân nước trong bình bị nóng
+
+            h2 Do không khí xung quanh nóng lên
+
+            p Không khí ngoài trời chứa phần đa là các phân tử oxy, khi các phân tử oxy nóng lên, một phần sẽ hòa vào trong nước ở bể và làm bồn nước inox nóng lên.
+
+            p #[strong.primary-color Thật bất ngờ!]
+
+            p Bởi cho dù nhiệt độ môi trường có thay đổi theo hướng nóng lên thì nguồn nước được chứa bên trong chỉ bị nóng chứ không thể gây bào mòn cũng như phản ứng đối với các loại #[a(href="#") bể nước inox]. Do đó không làm giảm tuổi thọ và hiệu suất sử dụng của bồn.
+
+            h2 Đường dây dẫn nước bị nóng
+
+            p Phần lớn các điều này cũng phụ thuộc vào nhiệt độ ngoài trời. Do đó, khi nguồn nước đi qua các dây dẫn bị nóng cũng sẽ bị ảnh hưởng và chịu nhiệt của bên trong ống dẫn.
+
+            h2 Téc nước thường đặt sát sàn bê tông 
+
+            p Nhiệt độ nóng lên sẽ tác dụng nhiệt làm sàn bê tông hấp thụ và cũng tỏa nhiệt. Vì thế bồn nước cũng sẽ bị ảnh hưởng và nước trong bồn bị làm nóng.
+
+            p Trên đây là một trong những nguyên nhân phổ biến thường xảy ra đối với đa số mọi nhà để bồn nước trên sân thượng. Để hạn chế nước bị làm nóng bạn hãy áp dụng cách chống nóng cho bồn nước inox chi tiết ngay trong phần tiếp theo.
+
+
+        .col-4
+          .news-sidebar
+            h3.title Tin xem nhiều
+            ul.news-list
+              li.new-item.flex
+                span 1
+                a(href="#") Thái dương năng | Máy nước nóng năng lượng mặt trời loại nào tốt?
+              li.new-item.flex
+                span 2
+                a(href="#") Cấu tạo & Nguyên lý hoạt động bình Thái Dương Năng Sơn Hà
+              li.new-item.flex
+                span 3
+                a(href="#") [BẬT MÍ] Có nên dùng máy nước nóng năng lượng mặt trời không?
+              li.new-item.flex
+                span 4
+                a(href="#") GIẢM GIÁ lên đến 30% khi mua COMBO BỒN NƯỚC + THÁI DƯƠNG NĂNG SƠN HÀ
+              li.new-item.flex
+                span 5
+                a(href="#") Hướng dẫn sử dụng bồn nước Sơn Hà đúng cách
+
+            h3.title Sản phẩm liên quan
+            .list-product-component
+              .list-items.flex.flex-wrap
+                each item in dataProducts
+                  a(href="#").product-item
+                    .product-image
+                      img(src=`${item.image}`, alt="")
+                      .product-sale.flex.items-center.justify-center
+                        img(src="./images/icon-sale.png", alt="")
+                        span= item.sale
+                    .product-info
+                      h2.product-name= item.title
+                      p.product-price= item.price
+                      del.product-old-price= item.oldPrice
+                      p.product-description= item.des
+
+  +listNews('BÀI VIẾT KHÁC', dataNews)
+  +listProducts('Sản phẩm đã xem', [], dataProducts)
