@@ -64,3 +64,9 @@ a {
     color: $primary !important;
   }
 }
+
+.line {
+  height: 1px;
+  margin: 20px 0;
+  background: $border-light;
+}

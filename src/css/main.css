@@ -676,6 +676,11 @@ a {
   a:hover {
     color: #b62329 !important; }
 
+.line {
+  height: 1px;
+  margin: 20px 0;
+  background: #dee2e6; }
+
 /* ===============================================================================
    2. Layout
    ===============================================================================
@@ -1430,3 +1435,50 @@ footer.footer .footer-address {
     color: #b62329;
     margin: 10px 0;
     font-weight: 600; }
+
+.product-detail-page .product-detail-description .detail-description {
+  background: #fff;
+  padding: 10px 15px; }
+  .product-detail-page .product-detail-description .detail-description .detail-tab {
+    border-bottom: 1px solid #dee2e6; }
+    .product-detail-page .product-detail-description .detail-description .detail-tab .tab-item {
+      font-size: 14px;
+      text-align: center;
+      padding: 10px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background: #4c8cf5;
+      color: #fff;
+      font-weight: 500; }
+  .product-detail-page .product-detail-description .detail-description .detail-main h2 {
+    font-size: 25px;
+    color: #b62329;
+    margin: 20px 0; }
+  .product-detail-page .product-detail-description .detail-description .detail-main p, .product-detail-page .product-detail-description .detail-description .detail-main li {
+    line-height: 1.5;
+    font-size: 17px;
+    color: #333;
+    margin: 15px 0; }
+  .product-detail-page .product-detail-description .detail-description .detail-main ul {
+    list-style: circle;
+    padding-left: 30px;
+    margin: 10px 0; }
+    .product-detail-page .product-detail-description .detail-description .detail-main ul li {
+      margin-bottom: 15px; }
+  .product-detail-page .product-detail-description .detail-description .detail-main a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #4c8cf5; }
+  .product-detail-page .product-detail-description .detail-description .detail-main img {
+    margin: 20px 0;
+    width: 100%; }
+  .product-detail-page .product-detail-description .detail-description .detail-main table {
+    width: 100%;
+    margin: 20px 0; }
+    .product-detail-page .product-detail-description .detail-description .detail-main table td {
+      padding: 0 15px;
+      border: 1px solid #dee2e6;
+      width: 50%; }
+  .product-detail-page .product-detail-description .detail-description .detail-main iframe {
+    width: 420px;
+    margin: 20px auto; }

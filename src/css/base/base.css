@@ -47,3 +47,8 @@ a {
   transition: 0.3s ease; }
   a:hover {
     color: #b62329 !important; }
+
+.line {
+  height: 1px;
+  margin: 20px 0;
+  background: #dee2e6; }

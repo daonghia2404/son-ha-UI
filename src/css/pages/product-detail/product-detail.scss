@@ -1,4 +1,66 @@
 @import '../../variables/variables.scss';
 
-.product-detail {
+.product-detail-page {
+  .product-detail-description {
+    .detail-description {
+      background: $white;
+      padding: 10px 15px;
+      .detail-tab {
+        border-bottom: 1px solid $border-light;
+        .tab-item {
+          font-size: 14px;
+          text-align: center;
+          padding: 10px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          background: $blue;
+          color: $white;
+          font-weight: 500;
+        }
+      }
+      .detail-main {
+        h2 {
+          font-size: 25px;
+          color: $primary;
+          margin: 20px 0;
+        }
+        p, li {
+          line-height: 1.5;
+          font-size: 17px;
+          color: $gray-text;
+          margin: 15px 0;
+        }
+        ul {
+          list-style: circle;
+          padding-left: 30px;
+          margin: 10px 0;
+          li {
+            margin-bottom: 15px;
+          }
+        }
+        a {
+          font-size: 17px;
+          font-weight: 600;
+          color: $blue;
+        }
+        img {
+          margin: 20px 0;
+          width: 100%;
+        }
+        table {
+          width: 100%;
+          margin: 20px 0;
+          td {
+            padding: 0 15px;
+            border: 1px solid $border-light;
+            width: 50%;
+          }
+        }
+        iframe {
+          width: 420px;
+          margin: 20px auto;
+        }
+      }
+    }
+  }
 }
