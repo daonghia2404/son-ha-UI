@@ -48,6 +48,10 @@ a {
   a:hover {
     color: #b62329 !important; }
 
+button {
+  outline: none;
+  border: none; }
+
 .primary-color {
   color: #b62329; }
 

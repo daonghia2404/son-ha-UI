@@ -1,0 +1,34 @@
+.element-holine-mobile {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 30;
+  background: #ffc20a;
+  padding: 10px 0;
+  box-shadow: 0px -2px 5px #ccc; }
+  .element-holine-mobile .col-4 {
+    padding: 0 5px; }
+  .element-holine-mobile a span {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    font-weight: 600; }
+  .element-holine-mobile a .circle {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 5px; }
+    .element-holine-mobile a .circle.red {
+      background: #b62329; }
+      .element-holine-mobile a .circle.red img {
+        transform: translateY(2px); }
+    .element-holine-mobile a .circle.blue {
+      background: #4c8cf5; }
+    .element-holine-mobile a .circle.orange {
+      background: #d57826; }
+    .element-holine-mobile a .circle img {
+      margin: auto;
+      width: 60%; }

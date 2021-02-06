@@ -1,7 +1,6 @@
-extend layout.pug
-include includes/desktop/list-products
+extend mobile-layout.pug
+include includes/mobile/list-products
 include includes/desktop/banner-image
-include includes/desktop/header-category
 
 block pages
   -
@@ -87,34 +86,13 @@ block pages
         image: './images/product-image.jpg'
       },
     ]
+  include includes/mobile/home-slider
 
-  +headerCategory(true)
+  +listProducts('Sản phẩm tiêu biểu', null, ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
+  +listProducts('Bồn nước Sơn hà', './images/banner-image-2.gif', ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
+  +listProducts('Năng lượng mặt trời', './images/banner-image-1.jpg', ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
 
-  include includes/desktop/home-slider
+  include includes/mobile/tab-component
 
-  .banner-three-image
-    .container
-      .row
-        .col-lg-4
-          .banner-item
-            img(src="./images/banner-image-3.jpg", alt="")
-        .col-lg-4
-          .banner-item
-            img(src="./images/banner-image-4.jpg", alt="")
-        .col-lg-4
-          .banner-item
-            img(src="./images/banner-image-5.jpg", alt="")
-
-
-  +listProducts('Bồn nước Sơn hà', ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
-
-  +bannerImage('./images/banner-image-2.gif')
-
-  +listProducts('Bồn nước Sơn hà', ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
-
-  +bannerImage('./images/banner-image-1.jpg')
-
-  +listProducts('Bồn nước Sơn hà', ['Bồn Inox sơn hà', 'Bồn nhựa sơn hà', 'Bể ngầm sơn hà', 'Bể ngầm - Bể treo inox', 'Bồn nước công nghiệp'], dataProducts)
-
-  include includes/desktop/tab-component
   include includes/desktop/tu-khoa
+

@@ -25,6 +25,9 @@
 @import './layout/header/header.scss';
 @import './layout/footer/footer.scss';
 
+@import './layout/header/header-mobile.scss';
+@import './layout/footer/footer-mobile.scss';
+
 /* ===============================================================================
    3. Components
    ===============================================================================
@@ -42,6 +45,12 @@
 @import './components/news-component/news-component.scss';
 @import './components/new-block/new-block.scss';
 
+@import './components/mobile-home-slider/mobile-home-slider.scss';
+@import './components/mobile-category-megamenu/mobile-category-megamenu.scss';
+@import './components/mobile-element-hotline/mobile-element-hotline.scss';
+@import './components/mobile-list-product/mobile-list-product.scss';
+@import './components/mobile-tab-component/mobile-tab-component.scss';
+
 /* ===============================================================================
    4. Pages
    ===============================================================================
@@ -51,3 +60,5 @@
 @import './pages/product-detail/product-detail.scss';
 @import './pages/news/news.scss';
 @import './pages/new-detail/new-detail.scss';
+
+@import './pages/mobile-category-detail/mobile-category-detail.scss';

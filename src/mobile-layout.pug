@@ -17,13 +17,13 @@ html
 
     block head
 
-  body
-    include includes/desktop/header
-    include includes/desktop/element-layout
+  body(style="padding-bottom: 80px;")
+    include includes/mobile/header
+    include includes/mobile/element-hotline
 
     block pages
 
-    include includes/desktop/footer
+    include includes/mobile/footer
 
     block script
     //- jQuery

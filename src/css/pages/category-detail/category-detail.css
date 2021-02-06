@@ -28,33 +28,44 @@
       height: 50px;
       margin: 20px auto 0; }
 
+.category-detail-page .category-sidebar {
+  background: #fff;
+  padding: 5px 10px; }
+  .category-detail-page .category-sidebar h3 {
+    margin: 10px 0 6px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600; }
+  .category-detail-page .category-sidebar .filter-group {
+    padding-bottom: 10px;
+    margin-bottom: 10px; }
+    .category-detail-page .category-sidebar .filter-group:not(:last-of-type) {
+      border-bottom: 1px solid #dee2e6; }
+
+.category-detail-page .checkbox-group {
+  padding: 5px 0;
+  cursor: pointer; }
+  .category-detail-page .checkbox-group input {
+    margin-left: 3px;
+    margin-right: 10px;
+    transform: scale(1.4); }
+  .category-detail-page .checkbox-group label {
+    font-size: 15px; }
+
 .category-detail-page .category-product-main {
   margin-bottom: 10px; }
+  .category-detail-page .category-product-main .category-sort {
+    padding: 8px;
+    background: #fff; }
+    .category-detail-page .category-product-main .category-sort p {
+      font-size: 15px;
+      font-weight: 600;
+      margin-right: 10px; }
+    .category-detail-page .category-product-main .category-sort .checkbox-group {
+      margin-right: 15px; }
   .category-detail-page .category-product-main .product-item {
     flex: 0 0 calc(100% / 4);
     max-width: calc(100% / 4); }
-  .category-detail-page .category-product-main .category-sidebar {
-    background: #fff;
-    padding: 5px 10px; }
-    .category-detail-page .category-product-main .category-sidebar h3 {
-      margin: 10px 0 6px;
-      text-transform: uppercase;
-      font-size: 15px;
-      font-weight: 600; }
-    .category-detail-page .category-product-main .category-sidebar .filter-group {
-      padding-bottom: 10px;
-      margin-bottom: 10px; }
-      .category-detail-page .category-product-main .category-sidebar .filter-group:not(:last-of-type) {
-        border-bottom: 1px solid #dee2e6; }
-      .category-detail-page .category-product-main .category-sidebar .filter-group .checkbox-group {
-        padding: 5px 0;
-        cursor: pointer; }
-        .category-detail-page .category-product-main .category-sidebar .filter-group .checkbox-group input {
-          margin-left: 3px;
-          margin-right: 10px;
-          transform: scale(1.4); }
-        .category-detail-page .category-product-main .category-sidebar .filter-group .checkbox-group label {
-          font-size: 15px; }
 
 .category-detail-page .category-detail-description {
   padding: 5px 10px;

@@ -2,6 +2,11 @@
 
 .tu-khoa {
   margin-bottom: 15px;
+  .container {
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
   .card {
     background: $white;
     padding: 15px 10px;
@@ -9,9 +14,13 @@
       font-size: 15px;
       line-height: 2;
     }
+    p {
+      margin-right: 15px;
+    }
     a {
       color: $blue;
-      padding: 0 10px;
+      margin-right: 15px;
+      display: inline-block;
       &:before {
         content: '•';
         margin: 0 5px;

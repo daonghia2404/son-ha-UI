@@ -1,0 +1,37 @@
+.tab-component-mobile.tab-component {
+  .card-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow: auto;
+    flex-direction: row;
+    .tab-item {
+      white-space: nowrap;
+      padding: 0 10px;
+      margin: 0 10px 10px 0;
+    }
+  }
+  .card-right {
+    .tab-item {
+      &.active {
+        display: block;
+      }
+      .tin-tuc-item {
+        &.big {
+          margin: 0 0 15px 0;
+          .tin-tuc-image {
+            position: relative;
+            width: 100%;
+          }
+          .tin-tuc-content {
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+        .tin-tuc-image {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

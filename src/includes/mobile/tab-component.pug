@@ -1,0 +1,30 @@
+.tab-component-mobile.tab-component
+  .card
+    .card-left#tab-component-control.flex
+      .tab-item.flex.items-center.justify-center.active Tin tức
+      .tab-item.flex.items-center.justify-center Tư vấn
+      .tab-item.flex.items-center.justify-center Công nghệ - Kỹ thuật
+      .tab-item.flex.items-center.justify-center Ưu đãi & Khuyến mãi
+
+    .card-right#tab-component-main
+      each tab in [1,2,3,4]
+        .tab-item(class=`${tab === 1 ? 'active' : ''}`)
+          .tin-tuc-item.big
+            .tin-tuc-image.flex.items-center.justify-center
+              img(src="./images/tin-tuc-image.jpg", alt="")
+            .tin-tuc-content
+              a(href="#")= `Công dụng và tiêu chuẩn kỹ thuật bồn nước Sơn Hà Inox ${tab}`
+              .tin-tuc-date.gray.flex.items-center
+                img(src="./images/icon-clock.svg", alt="")
+                |21-11-2020, 4:23 PM
+          .tin-tuc-items.sidebar
+            each item in [1,2,3,4]
+              .tin-tuc-item.flex
+                .tin-tuc-image.flex.items-center.justify-center
+                  img(src="./images/tin-tuc-image.jpg", alt="")
+                .tin-tuc-content
+                  a(href="#")= `Cách chống nóng bồn nước inox Sơn Hà hiệu quả tuyệt đối ${tab}`
+                  .tin-tuc-date.flex.items-center
+                    img(src="./images/icon-clock.svg", alt="")
+                    |21-11-2020, 4:23 PM
+          

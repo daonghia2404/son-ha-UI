@@ -1,0 +1,26 @@
+mixin listProducts(title, banner, listsCategory, listProducts)
+  .list-product-mobile-component
+    .list-header
+      h2= title
+      if banner 
+        .banner-image
+          img(src=`${banner}`, alt="")
+      .category-list.flex
+        each item in listsCategory
+          a(href="#")= item
+    
+    
+    .container
+      .list-items.row
+        each item in listProducts
+          a(href="#").product-item.col-6
+            .product-image
+              img(src=`${item.image}`, alt="")
+              .product-sale.flex.items-center.justify-center
+                img(src="./images/icon-sale.png", alt="")
+                span= item.sale
+            .product-info
+              h2.product-name= item.title
+              p.product-price= item.price
+              del.product-old-price= item.oldPrice
+              p.product-description= item.des

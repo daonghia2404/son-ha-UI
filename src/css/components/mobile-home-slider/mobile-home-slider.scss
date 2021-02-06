@@ -1,0 +1,45 @@
+@import '../../variables/variables.scss';
+
+.home-slider-mobile {
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    .owl-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transition: 0.3s ease;
+      background: $primary;
+      margin: 10px 5px;
+      &.active {
+        border: 2px solid $white;
+      }
+    }
+  }
+
+  .category-slider {
+    overflow: auto;
+    padding: 10px;
+    background: $white;
+    .list-wrap {
+      flex: 0 0 80px;
+      max-width: 80px;
+      margin: 0 5px;
+      .icon {
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px solid $border-light;
+        background: $white;
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto 5px;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}

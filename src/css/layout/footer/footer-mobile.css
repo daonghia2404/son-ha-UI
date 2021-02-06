@@ -1,0 +1,10 @@
+footer.footer-mobile .footer-hotline {
+  padding: 0; }
+  footer.footer-mobile .footer-hotline .hotline-item {
+    padding: 8px 10px;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    footer.footer-mobile .footer-hotline .hotline-item img {
+      width: 25px; }
+    footer.footer-mobile .footer-hotline .hotline-item:not(:last-of-type) {
+      border-bottom: 1px solid #fff; }

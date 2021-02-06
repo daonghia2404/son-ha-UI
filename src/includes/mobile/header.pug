@@ -1,0 +1,32 @@
+header.header-mobile
+  .header-nav
+    .container
+      .flex.items-center.justify-between
+        .header-nav-item.flex.items-center.w-full
+          img(src="./images/icon-circle-outline.svg", alt="")
+          a(href="#").welcome-link 【Hệ thống phân phối】Bồn nước Sơn Hà chính hãng toàn quốc
+
+  .header-main
+    include ./category-megamenu.pug
+    .container
+      .flex.items-center.justify-between
+        a(href="#").header-logo
+          img(src="./images/logo.jpg", alt="")
+        
+        .header-right.flex.items-center
+          .btn-search 
+            img(src="./images/icon-search-red.svg", alt="")
+
+          .btn-menu.flex.items-center
+            img(src="./images/icon-bar.svg", alt="")
+
+      
+      .header-search
+        .container
+          form(action="#").flex.items-center
+            input(type="text" placeholder="Bạn cần tìm gì")
+            button.flex.items-center.justify-center
+              img(src="./images/icon-search.svg", alt="")
+
+
+      

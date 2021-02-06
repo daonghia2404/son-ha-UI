@@ -1,0 +1,101 @@
+-
+  const dataHotline = [
+    {
+      title: 'Bắc',
+      hotline: '0969.26.90.90',
+      phone: '0969269090',
+    },
+    {
+      title: 'Trung',
+      hotline: '0962.15.26.26',
+      phone: '0962152626',
+    },
+    {
+      title: 'Nam',
+      hotline: '0976.285.65.65',
+      phone: '09762856565',
+    },
+  ]
+
+footer.footer-mobile.footer
+  .footer-hotline.flex.flex-wrap
+    each item in dataHotline
+      .hotline-item.flex
+        img(src="./images/icon-phone-call.svg", alt="")
+        .hotline-info.flex.items-center
+          p(style="margin-right: 10px;")= `Hotline miền ${item.title}`
+          a(href=`tel:${item.phone}`)= item.hotline
+
+  .footer-main
+    .container
+      .row
+        .col-12
+          h4 Thông tin Sơn Hà
+          each item in ['Giới thiệu công ty', 'Tầm nhìn sứ mệnh', 'Quá trình phát triển', 'Các giải thưởng', 'Liên hệ, Góp ý', 'Phương thức thanh toán']
+            a(href="#")= item
+        .col-12
+          h4 Hỗ trợ khách hàng
+          each item in ['Chính sách bảo hành', 'Chính sách giao hàng', 'Chính sách đổi trả hàng', 'Chính sách bảo mật', 'Chính sách & quy định chung']
+            a(href="#")= item
+        .col-12
+          h4 Tổng đài hỗ trợ
+          a(href="tel: 02433898866")
+            |Hotline:
+            strong 024.3389.8866
+          a(href="tel: 02433898866")
+            |CSKH:
+            strong 024.3389.8866
+          a(href="tel: 0962152626")
+            |Khiếu nại:
+            strong 0962.15.26.26
+          a(href="#") Hướng dẫn mua hàng
+
+        .col-12
+          h4 Kết nối cộng đồng Facebook
+          img(src="./images/logo-footer.png", alt="").logo-footer
+
+        .col-12
+          img(src="./images/bocongthuong.png", alt="").bo-cong-thuong
+
+        .col-12
+          h4 Đăng ký nhận báo giá 2021
+          form(action="#").flex.mb-4
+            input(type="text" placeholder="Nhập số điện thoại của bạn")
+            button Gửi
+
+        .col-12
+          h4 Kết nối với chúng tôi
+          .social-network.flex.flex-wrap
+            a(href="#")
+              img(src="./images/icon-facebook.svg", alt="")
+            a(href="#")
+              img(src="./images/icon-twitter.svg", alt="")
+            a(href="#")
+              img(src="./images/icon-pinterest.svg", alt="")
+
+  .footer-address
+    .container
+      .row
+        each item in ['Bắc', 'Trung', 'Nam']
+          .col-lg-4
+            h2.flex.items-center.justify-center= `Sơn hà miền ${item}`
+            each item in [1,2,3]
+              .address-item-group
+                .address-item.flex.items-center
+                  .address-image.flex.items-center.justify-center
+                    img(src="./images/address-image.jpg", alt="")
+                  .address-info
+                    p
+                      |Hà nội
+                      a(href="#").flex.items-center
+                        |Xem bản đồ
+                        img(src="./images/icon-map-marker.svg", alt="")
+                    p Số : 89 Thanh Nhàn - Hà Nội
+                    p Tel: #[a(href="tel: 0969269090") 0969.26.90.90]
+
+
+  .footer-bottom
+    .container
+      .flex.items-center.flex-wrap
+        p Phương thức thanh toán
+        img(src="./images/payment-footer.png", alt="")

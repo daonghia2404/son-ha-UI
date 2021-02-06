@@ -1,0 +1,16 @@
+
+.home-slider-mobile
+  .slider-main
+    .owl-carousel#home-slider-moblie-main
+      each item in [1,2,3,4,5]
+        .item
+          .carousel-image
+            img(src=`./images/carousel-image-${item}.jpg`, alt="")
+
+  .category-slider.flex
+    each item, index in dataCategory
+      .list-wrap
+        a(href="#").category-link
+          img(src=`./images/category-icon-${index + 1}.jpg`, alt="").icon
+          span= item.title
+

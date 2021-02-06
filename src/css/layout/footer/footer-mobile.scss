@@ -1,0 +1,18 @@
+@import '../../variables/variables.scss';
+
+footer.footer-mobile {
+  .footer-hotline {
+    padding: 0;
+    .hotline-item {
+      padding: 8px 10px;
+      flex: 0 0 100%;
+      max-width: 100%;
+      img {
+        width: 25px;
+      }
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+}
