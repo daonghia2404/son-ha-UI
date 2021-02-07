@@ -1,0 +1,35 @@
+.list-new-mobile-component {
+  background: #fff; }
+  .list-new-mobile-component .list-header h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    height: 45px;
+    line-height: 45px;
+    background: #b62329;
+    color: #fff;
+    padding: 0 10px; }
+  .list-new-mobile-component .list-items {
+    padding: 8px; }
+  .list-new-mobile-component .news-item {
+    padding: 10px 0; }
+    .list-new-mobile-component .news-item:not(:last-of-type) {
+      border-bottom: 1px solid #dee2e6; }
+    .list-new-mobile-component .news-item .new-image img {
+      width: 100%; }
+    .list-new-mobile-component .news-item .new-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5; }
+    .list-new-mobile-component .news-item p {
+      line-height: 1.5;
+      font-size: 15px; }
+    .list-new-mobile-component .news-item.big .new-image {
+      margin-bottom: 15px; }
+    .list-new-mobile-component .news-item.small {
+      display: flex; }
+      .list-new-mobile-component .news-item.small .new-image {
+        flex: 0 0 120px;
+        max-width: 120px;
+        margin-right: 10px; }

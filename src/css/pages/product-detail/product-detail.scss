@@ -20,6 +20,35 @@
     }
   }
 
+  .product-detail-options {
+    margin-bottom: 15px;
+    .col-6 {
+      &:nth-of-type(odd) {
+        padding-right: 5px;
+      }
+      &:nth-of-type(even) {
+        padding-left: 5px;
+      }
+    }
+    .option-item {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid $border-light;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover,
+      &.active {
+        border-color: $blue;
+      }
+      h4, p {
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+        margin: 0 !important;
+      }
+    }
+  }
+
   .product-detail-main {
     margin-bottom: 10px;
 

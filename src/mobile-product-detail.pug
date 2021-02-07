@@ -1,0 +1,287 @@
+extend mobile-layout.pug
+include includes/mobile/list-products
+include includes/desktop/header-category
+include includes/desktop/nav-redirect
+
+block pages
+  -
+    const dataProducts = [
+      {
+        title: 'Bể nước đứng Sơn Hà 2000L (Φ1140)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Sơn Hà 2000L đứng( Φ1380)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L ngang',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L đứng',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Inox Sơn Hà 1000L ngang (Φ960) - SHN1000F960',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+    ]
+
+  +navRedirect(['Bồn nước Sơn hà', 'Bồn inox sơn hà', 'Bồn nước Inox đứng'])
+
+  .product-detail-page.product-detail-mobile-page
+    .product-detail-main
+      .container
+        .product-detail-main-wrapper
+          .product-slider-wrapper
+            h3.title Bồn nước Inox Sơn Hà 5000L ngang (Φ1420)
+            p Mã hàng: 583
+
+            .product-carousel
+              .owl-carousel#product-carousel
+                .item
+                  img(src="./images/product-detail-image-1.png", alt="")
+                .item
+                  img(src="./images/product-detail-image-5.jpg", alt="")
+
+              #product-carousel-control.flex.owl-dots
+                .control-item.flex.items-center.justify-center.owl-dot
+                  img(src="./images/product-detail-image-1.png", alt="")
+                .control-item.flex.items-center.justify-center.owl-dot
+                  img(src="./images/product-detail-image-5.jpg", alt="")
+
+          .product-detail-wrapper
+            .line
+
+            p.mr-4 Giá bán chỉ: #[strong.primary-color 14.650.000đ]
+            p Giá thị trường: #[strong.small #[del 16.848.000đ]]
+            p Tiết kiệm: #[span.label-component.primary-color -13%]
+
+            ul.list-description-product.flex.flex-wrap
+              li #[strong Nhãn hiệu: ] Sơn Hà
+              li #[strong Bảo hành: ] 12 năm
+              li #[strong Model: ] SHN5000F1420
+              li #[strong Kiểu dáng: ] Bồn ngang
+              
+
+            p Tình trạng : #[strong.blue-color CÒN HÀNG]
+
+            h5 Đặc điểm nổi bật
+            
+            ul.list-des-hightlight
+              li Vật liệu inox SUS304 cao cấp, có độ cứng , độ bền rất cao
+              li Chất lượng đạt tiêu chuẩn Quốc tế ISO 9001-2008.
+              li Công nghệ hàn lăn tự động, đảm bảo đường hàn đẹp
+              li Thân bồn cứng cáp với thiết kế tiêu chuẩn
+              li Chụp nhựa chống xước bồn giảm thiểu rủi ro
+
+            h5 Tùy chọn sản phẩm
+
+            .row.product-detail-options 
+              .col-6
+                .option-item.active
+                  h4 Bồn ngang
+                  p.primary-color 14.650.000 đ
+              .col-6 
+                .option-item 
+                  h4 Bồn đứng
+                  p.primary-color 13.650.000 đ
+
+            .price-gift-wrapper
+              h3.title-banner
+                img(src="./images/icon-gift.svg", alt="")
+                |KHUYẾN MÃI KHI MUA ONLINE HOẶC GỌI 0933.094.688
+              ul
+                li #[span 1] Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát!
+                li #[span 2] Miễn phí vận chuyển toàn quốc
+                li #[span 3] Miễn phí kéo bồn inox lên trên mái (Dưới 7 tầng) trong khu vực nội thành các TP lớn (Hà Nội, Đà Nẵng, HCM, Hải Phòng…)
+
+            .row
+              .col-6(style="padding-right: 5px").mb-2
+                button.product-btn.blue
+                  h6 Mua ngay
+                  p Giao hàng tận nơi
+              .col-6(style="padding-left: 5px").mb-2
+                button.product-btn.yellow
+                  h6 Thêm vào giỏ 
+                  p Tiếp tục mua hàng
+              .col-12.mb-5
+                a(href="tel: 0123456789").product-btn.primary
+                  h6.flex.items-center.justify-center
+                    img(src="./images/icon-phone-call.svg", alt="")
+                    |Yêu cầu gọi lại 
+                  p Bấm vào đây để chúng tôi gọi lại cho bạn ngay
+
+            p(style="padding: 8px; border: 1px solid #dee2e6; margin-bottom: 20px;")
+              |Cam kết sản phẩm
+              strong.primary-color  chính hãng 100% 
+              |, Sản phẩm được sản xuất trên dây truyền tối tân nhất của EU . Áp dụng cho toàn bộ sản phẩm.
+              a(href="#").italic Chính sách bảo hành  
+              | và 
+              a(href="#").italic chính sách đổi trả hàng
+
+          .safe-shopping-online
+            h4 Yên tâm mua sắm online
+            .safe-item.flex.items-center
+              img(src="./images/icon-lapdat.png", alt="")
+              p Bảo trì trọn đời, bảo hành #[strong 12 - 15 năm] an tâm sử dụng 
+            .safe-item.flex.items-center
+              img(src="./images/icon-doimoi.png", alt="")
+              p #[strong Miễn phí] giao hàng lắp đặt tại nhà
+            .safe-item.flex.items-center
+              img(src="./images/icon-doitra.png", alt="")
+              p #[strong Linh kiện sẵn] có tại hệ thống nhà máy Sơn Hà toàn quốc 
+            .safe-item.flex.items-center
+              img(src="./images/icon-baohanh.png", alt="")
+              p Nhận hàng thanh toán #[strong yên tâm mua sắm online]
+            .safe-item.flex.items-center
+              img(src="./images/icon-doingulapdat.png", alt="")
+              p Đảm bảo hàng chính hãng #[strong tập đoàn Sơn Hà]
+            .safe-item.flex.items-center
+              img(src="./images/icon-baohanhtainoi.png", alt="")
+              p Được kiểm định chất lượng theo tiêu chuẩn quốc tế
+            .safe-item.flex.items-center
+              img(src="./images/icon-baohanhlapdat.png", alt="")
+              p Hàng Việt Nam #[strong chất lượng cao]
+
+          .call-now
+            p.text-center(style="font-weight: 600; font-size: 16px") Gọi Ngay! Sẽ Có Giá Tốt Hơn
+
+            a(href="tel: 0123456789" style="font-size: 14px;").flex.items-center.justify-center
+              img(src="./images/icon-phone-call-red.svg", alt="" style="width: 12px; margin-right: 8px;")
+              |Hotline: 
+              strong.primary-color  0933.09.46.88
+
+
+    .product-detail-description
+      .container
+        .product-detail-description-wrapper
+          .detail-description
+            .detail-tab.flex.items-center
+              .tab-item Thông tin sản phẩm
+            .detail-main
+              p
+                |Là sản phẩm thuộc tập đoàn Sơn Hà uy tín số 1 thị trường Việt, 
+                a(href="#")  bồn nước inox Sơn Hà 2000l 
+                | đứng được sản xuất bằng vật liệu Inox SUS304 tuyệt hảo, độ cứng, độ bền rất cao, đựng nước an toàn trữ cung cấp cho gia đình.
+              h2 Bồn nước inox Sơn Hà đứng - Sản phẩm chất lượng vượt thời gian
+              p Thương hiệu téc nước Sơn Hà đã quá đỗi quen thuộc với người tiêu dùng Việt suốt nhiều thập kỉ qua. Là tập đoàn cung ứng sản phẩm, giải pháp chuyên biệt, đồng bộ hóa nguồn nước sinh hoạt/công nghiệp hàng đầu Việt Nam, Sơn Hà đã được chính phủ vinh danh “thương hiệu quốc gia”.
+              p
+                |Với những sản phẩm chất lượng kiến tạo từ bàn tay khối óc người Việt và nỗ lực cải tiến không ngừng, từ lâu, thương hiệu Sơn Hà đã trở thành cái tên đầu tiên được nghĩ đến khi nhắc về thiết bị bồn nước, đặc biệt là 
+                a(href="#") bồn inox Sơn Hà.
+
+              img(src="./images/product-detail-image-1.png", alt="")
+
+              p Trải dài khắp mọi miền đất nước từ Bắc vào Nam, trên các mái nhà người Việt nơi đâu cũng thấy lấp lánh ánh kim bồn inox thân thuộc của Sơn Hà. Tiếng tăm thương hiệu đã, đang và ngày một vươn xa không chỉ bởi sản phẩm chất lượng mà còn liên tục được nâng cấp về mặt chất liệu, tính năng, đáp ứng yêu cầu ngày càng khắt khe của người dùng. Cùng tìm hiểu về một trong những loại bồn nước Sơn Hà thông dụng nhất, #[strong bồn nước inox Sơn Hà 2000l đứng (Φ1380).]
+
+              h2 Thông số kỹ thuật bồn Inox Sơn Hà 2000 lít đứng
+
+              table
+                tr
+                  td #[p Tên sản phẩm]
+                  td #[p Bồn nước Inox Sơn Hà 2000lit đứng SHD2000F1380]
+                tr
+                  td #[p Mã sản phẩm]
+                  td #[p SHD2000F1380]
+                tr
+                  td #[p Đường kính]
+                  td #[p 1380mm]
+                tr
+                  td #[p Chật liệu Inox]
+                  td #[p SUS304]
+                tr
+                  td #[p Chiều cao cả chân]
+                  td #[p 1860mm]
+                tr
+                  td #[p Chiều rộng cả chân]
+                  td #[p 1630mm]
+                tr
+                  td #[p Chiều cao bồn không chân]
+                  td #[p 1500mm]
+                tr
+                  td #[p Số người sử dụng phù hợp:]
+                  td #[p 5 - 6 người sử dụng]
+
+              img(src="./images/product-detail-image-4.jpg", alt="")
+
+              p.text-center.italic Kích thước bồn nước inox 2000l đứng (Φ1380)
+
+              p Trên đây là bản vẽ kích thước #[strong bồn nước Inox Sơn Hà 2000l đứng SHD2000F1380.] Quý khách hàng muốn biết thêm #[strong thông tin chi tiết về kích thước sản phẩm phù hợp nhu cầu sử dụng của gia đình cũng như tư vấn lắp đặt bồn nước inox ngang miễn phí] chỉ cần nhấc điện thoại lên và #[strong gọi tới số] #[a(href="#") 0933.094.688], đội ngũ chuyên môn sẽ ngay lập tức giải đáp thắc mắc cho bạn!
+
+              h2 Téc nước inox Sơn Hà 2000L đứng đột phá công nghệ mới
+
+              p Các sản phẩm bồn nước Inox của Sơn Hà những năm trở lại đây được cải tiến rất nhiều về công nghệ sản xuất và nâng cấp đáp ứng sự an toàn, tiện nghi cho người dùng trên tôn chỉ giữ trọn niềm tin với lời khẳng định "Chất liệu cao cấp, độ bền vượt thời gian". Vậy, sản phẩm bồn inox Sơn Hà công nghệ mới có gì đặc biệt?
+
+              h3 Chất liệu bồn Inox 304 cao cấp, công nghệ dập liền - hàn lăn tiên tiến hàng đầu
+
+              p Cuộc sống công nghiệp hóa, hiện đại hóa khiến hầu hết các gia đình thành thị và nông thôn mới hiện nay đều sử dụng bồn inox thay cho các bể chứa trên mái hay nước giếng khoan bất tiện như ngày trước. Việc sử dụng bồn nước inox giúp các công trình xây dựng nói chung, nhà ở nói riêng giảm tải tối đa sức nặng của các bể chứa bê tông và tránh hiện tượng rò rỉ sau vài năm sử dụng dẫn tới nước dễ ngấm vào công trình (trần, tường nhà) gây hư hại, kém thẩm mỹ.
+
+              p Tính năng vượt trội của các tất cả các bồn inox Sơn Hà là được cấu thành từ 100% vật liệu inox SUS304, hiện là dòng inox được đánh giá cao và chiếm lòng tin người tiêu dùng nhất thị trường. Inox SUS304, tên gọi khác là thép không gỉ, được cấu tạo từ hợp kim crom, magan, nito và pha trộn ít biến màu, có độ dẻo, bền rất cao, bề mặt trơn mượt.
+
+              p Sở hữu đầy đủ tính năng của dòng inox cao cấp này, bồn nước Inox Sơn Hà 2000L đứng (Φ1380) có khả năng chịu lực, chịu nhiệt, chống ăn mòn, rò rỉ, chống bám rêu mốc, chống oxy hóa cực tốt, không phản ứng với axit, phản ứng từ kém. Cũng nhờ chất liệu inox SUS304 rất mềm dẻo, không cứng và thô như một số loại inox chất lượng kém khác mà khả năng tiết kiệm năng lượng cũng được nâng cao.
+
+              img(src="./images/product-detail-image-4.jpg", alt="")
+              p.text-center Đặc điểm của bồn nước Inox Sơn Hà chính hãng 
+              
+              p Nhìn bên ngoài chiếc #[strong bồn nước Inox Sơn Hà 2000L đứng (Φ1380)], ta có thể dễ dàng nhận thấy cấu tạo vật lý đơn giản gồm các phần chính: 
+
+              ul
+                li
+                  strong Phần nắp bồn: 
+                  |Là phía trên cùng của bồn đứng, người dùng dễ dàng mở/đóng nắp, kiểm tra nước trong bồn hoặc lắp đặt luồn các phao điện.
+                li
+                  strong Phần chụp bồn: 
+                  |Là phía trên cùng của bồn đứng, người dùng dễ dàng mở/đóng nắp, kiểm tra nước trong bồn hoặc lắp đặt luồn các phao điện.
+                li
+                  strong Phần thân bồn: 
+                  |Là phía trên cùng của bồn đứng, người dùng dễ dàng mở/đóng nắp, kiểm tra nước trong bồn hoặc lắp đặt luồn các phao điện.
+                li Ngoài ra, trên bề mặt trơn nhẵn của bồn inox là #[strong các lốc gân bồn] (gân đơn, lốc gân kép) giữ bồn chắc chắn hơn, không dễ bị tác động xô đẩy khi chứa nước.
+                li Trên chụp bồn inox đứng phía trên có một lỗ lắp phao điện (ngay cạnh nắp bồn) và một lỗ gắn van đường nước vào Còn phía chụp bồn phía dưới cũng có một lỗ nhỏ gắn van đường nước xả và gắn van đường nước ra.
+
+              p Tuy có kết cấu hết sức đơn giản nhưng bạn có thể hoàn toàn an tâm về khả năng chứa nước vững chắc và sự bền bỉ theo thời gian của bồn nước Inox Sơn Hà 2000L đứng (Φ1140). Bởi để cấu thành một khối inox trụ tròn bền chắc, rỗng bên trong, thành chiếc bồn này đã được trải qua dây chuyền sản xuất công nghệ mới tiên tiến hiện đại.
+
+              p Video hướng dẫn lắp đặt bồn nước inox Sơn Hà chi tiết dưới đây sẽ chỉ ra cho bạn cụ thể lưu ý và các bước lắp đặt dễ dàng.
+
+              <iframe src="https://www.youtube.com/embed/wofB1wzyYYI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            .see-more-btn.flex.items-center.justify-center
+              |Xem thêm
+              img(src="./images/icon-caret-down-blue.svg", alt="")
+            a(href="tel: 0123456789").hotline-btn.text-center.product-btn.blue
+              h6 Yêu cầu gọi tư vấn trực tiếp
+              p (Tư vấn viên gọi lại cho quý khách trong 5 phút)
+
+            .line
+
+            .detail-comment-form
+              h3.title Hỏi và đáp (0 bình luận)
+              form(action="#").comment-form
+                textarea(placeholder="Xin mời để lại câu hỏi, chúng tôi sẽ trả lời trong 30 phút từ 8h - 22h mỗi ngày")
+
+
+
+  +listProducts('Sản phẩm tương tự', null, [], dataProducts)
+  +listProducts('Sản phẩm đã xem', null, [], dataProducts)
+
+            

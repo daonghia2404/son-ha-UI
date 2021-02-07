@@ -1872,6 +1872,42 @@ footer.footer-mobile .footer-hotline {
 .tab-component-mobile.tab-component .card-right .tab-item .tin-tuc-item .tin-tuc-image {
   width: 60%; }
 
+.list-new-mobile-component {
+  background: #fff; }
+  .list-new-mobile-component .list-header h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    height: 45px;
+    line-height: 45px;
+    background: #b62329;
+    color: #fff;
+    padding: 0 10px; }
+  .list-new-mobile-component .list-items {
+    padding: 8px; }
+  .list-new-mobile-component .news-item {
+    padding: 10px 0; }
+    .list-new-mobile-component .news-item:not(:last-of-type) {
+      border-bottom: 1px solid #dee2e6; }
+    .list-new-mobile-component .news-item .new-image img {
+      width: 100%; }
+    .list-new-mobile-component .news-item .new-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5; }
+    .list-new-mobile-component .news-item p {
+      line-height: 1.5;
+      font-size: 15px; }
+    .list-new-mobile-component .news-item.big .new-image {
+      margin-bottom: 15px; }
+    .list-new-mobile-component .news-item.small {
+      display: flex; }
+      .list-new-mobile-component .news-item.small .new-image {
+        flex: 0 0 120px;
+        max-width: 120px;
+        margin-right: 10px; }
+
 /* ===============================================================================
    4. Pages
    ===============================================================================
@@ -1989,6 +2025,25 @@ footer.footer-mobile .footer-hotline {
     .product-detail-page .see-more-btn img {
       width: 10px;
       margin-left: 10px; }
+  .product-detail-page .product-detail-options {
+    margin-bottom: 15px; }
+    .product-detail-page .product-detail-options .col-6:nth-of-type(odd) {
+      padding-right: 5px; }
+    .product-detail-page .product-detail-options .col-6:nth-of-type(even) {
+      padding-left: 5px; }
+    .product-detail-page .product-detail-options .option-item {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #dee2e6;
+      cursor: pointer;
+      transition: 0.3s ease; }
+      .product-detail-page .product-detail-options .option-item:hover, .product-detail-page .product-detail-options .option-item.active {
+        border-color: #4c8cf5; }
+      .product-detail-page .product-detail-options .option-item h4, .product-detail-page .product-detail-options .option-item p {
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+        margin: 0 !important; }
   .product-detail-page .product-detail-main {
     margin-bottom: 10px; }
     .product-detail-page .product-detail-main .product-slider-wrapper ul {
@@ -2374,3 +2429,79 @@ footer.footer-mobile .footer-hotline {
     background: #fff;
     margin-left: auto;
     overflow: auto; }
+
+.product-detail-page.product-detail-mobile-page .container {
+  background: #fff; }
+
+.product-detail-page.product-detail-mobile-page .product-detail-description-wrapper,
+.product-detail-page.product-detail-mobile-page .product-detail-main-wrapper {
+  padding-left: 0;
+  padding-right: 0; }
+
+.product-detail-page.product-detail-mobile-page .product-slider-wrapper h3.title {
+  font-size: 20px;
+  margin: 5px 0 0;
+  font-weight: 600; }
+
+.product-detail-page.product-detail-mobile-page .product-slider-wrapper p {
+  margin-bottom: 8px;
+  font-size: 15px; }
+
+.product-detail-page.product-detail-mobile-page .product-detail-description .detail-description .detail-main iframe {
+  width: 100%;
+  height: 50vw; }
+
+.product-detail-page.product-detail-mobile-page .product-detail-main .product-detail-wrapper ul.list-description-product li {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.product-detail-page.product-detail-mobile-page .product-detail-description .detail-description .hotline-btn {
+  width: 100%; }
+
+.product-detail-page.product-detail-mobile-page .list-des-hightlight {
+  padding-left: 30px;
+  list-style: circle;
+  margin: 20px 0; }
+  .product-detail-page.product-detail-mobile-page .list-des-hightlight li {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px; }
+
+.news-page.news-mobile-page {
+  background: #fff; }
+  .news-page.news-mobile-page .new-quick-select-links {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    padding: 6px 12px;
+    font-size: 15px;
+    height: 45px;
+    border-radius: 5px; }
+  .news-page.news-mobile-page .pagination {
+    padding: 0; }
+  .news-page.news-mobile-page .news-item {
+    padding: 10px 0; }
+    .news-page.news-mobile-page .news-item:not(:last-of-type) {
+      border-bottom: 1px solid #dee2e6; }
+    .news-page.news-mobile-page .news-item .new-image img {
+      width: 100%; }
+    .news-page.news-mobile-page .news-item .new-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5; }
+    .news-page.news-mobile-page .news-item p {
+      line-height: 1.5;
+      font-size: 15px; }
+    .news-page.news-mobile-page .news-item.big .new-image {
+      margin-bottom: 15px; }
+    .news-page.news-mobile-page .news-item.small {
+      display: flex; }
+      .news-page.news-mobile-page .news-item.small .new-image {
+        flex: 0 0 120px;
+        max-width: 120px;
+        margin-right: 10px; }
+
+.new-detail-page.new-detail-mobile .new-quick-select-links {
+  margin-bottom: 10px; }
+
+.new-detail-page.new-detail-mobile .quick-recommend-links {
+  padding: 5px 5px 5px 0; }

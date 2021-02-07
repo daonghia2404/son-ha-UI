@@ -1,0 +1,13 @@
+mixin listNews(title, dataNews)
+  .list-new-mobile-component
+    .list-header
+      h2= title
+
+    .list-items.flex.flex-wrap
+      each item in dataNews
+        a(href="#").news-item.small
+          .new-image
+            img(src=`${item.image}`, alt="")
+          .new-info
+            h2.new-title= item.title
+            p.new-date= item.time

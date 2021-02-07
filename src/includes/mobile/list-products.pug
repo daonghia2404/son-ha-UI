@@ -5,9 +5,11 @@ mixin listProducts(title, banner, listsCategory, listProducts)
       if banner 
         .banner-image
           img(src=`${banner}`, alt="")
-      .category-list.flex
-        each item in listsCategory
-          a(href="#")= item
+
+      if listsCategory.length !== 0
+        .category-list.flex
+          each item in listsCategory
+            a(href="#")= item
     
     
     .container

@@ -1,0 +1,109 @@
+extend mobile-layout.pug
+include includes/mobile/list-products
+include includes/desktop/nav-redirect
+include includes/desktop/pagination
+
+block pages
+  -
+    const dataProducts = [
+      {
+        title: 'Bể nước đứng Sơn Hà 2000L (Φ1140)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Sơn Hà 2000L đứng( Φ1380)',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L ngang',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Nhựa Sơn Hà 1000L đứng',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+      {
+        title: 'Bồn nước Inox Sơn Hà 1000L ngang (Φ960) - SHN1000F960',
+        price: '5.730.000',
+        oldPrice: '6.704.000',
+        des: 'Áp dụng cho khách hàng gọi điện, đến trực tiếp hoặc chát! Miễn phí vẫn chuyển toàn quốc Miễn phí khảo sát tư vấn, lắp đặt',
+        sale: '14%',
+        image: './images/product-image.jpg'
+      },
+    ]
+
+  +navRedirect(['Tin tức'])
+
+  .news-page.news-mobile-page
+    .news-main
+      .news-main-wrapper
+        select.new-quick-select-links
+          option(value="#") Tin tức mới 
+          option(value="#") Tư vấn
+          option(value="#") Công nghệ - Kỹ thuật
+          option(value="#") u đãi & Khuyến mãi
+
+      .news-main-wrapper
+        a(href="#").news-item.big
+          .new-image
+            img(src="./images/new-image.jpg", alt="")
+          h2.new-title Cách chống nóng bồn nước inox Sơn Hà hiệu quả tuyệt đối
+          p Để thay thế cho bồn nước truyền thống và mang đến sự tiện nghi cho người dùng, bồn nước inox ngày càng được yêu thích và là sự ưu tiên số một của mọi nhà. Tuy nhiên để lựa chọn vị trí đặt bồn thích hợp để hạn chế nước nóng khi mùa hè thì không phải ai cũng biết.
+
+        a(href="#").news-item.small
+          .new-image
+            img(src="./images/new-image.jpg", alt="")
+          h2.new-title Review 3 hãng thái dương năng nào tốt nhất | Máy năng lượng mặt trời
+        a(href="#").news-item.small
+          .new-image
+            img(src="./images/new-image.jpg", alt="")
+          h2.new-title Review [Gợi ý] Nên mua bình nóng lạnh giá bao nhiêu thì hợp lý?
+        a(href="#").news-item.small
+          .new-image
+            img(src="./images/new-image.jpg", alt="")
+          h2.new-title [Cập nhật] Bảng giá bồn nước Toàn Thắng mới nhất 2020
+        a(href="#").news-item.small
+          .new-image
+            img(src="./images/new-image.jpg", alt="")
+          h2.new-title Thái dương năng | Máy nước nóng năng lượng mặt trời loại nào tốt?
+
+
+        +pagination([1,2])
+      
+      .news-sidebar
+        h3.title Tin xem nhiều
+        ul.news-list
+          li.new-item.flex.items-center
+            span 1
+            a(href="#") Thái dương năng | Máy nước nóng năng lượng mặt trời loại nào tốt?
+          li.new-item.flex.items-center
+            span 2
+            a(href="#") Cấu tạo & Nguyên lý hoạt động bình Thái Dương Năng Sơn Hà
+          li.new-item.flex.items-center
+            span 3
+            a(href="#") [BẬT MÍ] Có nên dùng máy nước nóng năng lượng mặt trời không?
+          li.new-item.flex.items-center
+            span 4
+            a(href="#") GIẢM GIÁ lên đến 30% khi mua COMBO BỒN NƯỚC + THÁI DƯƠNG NĂNG SƠN HÀ
+          li.new-item.flex.items-center
+            span 5
+            a(href="#") Hướng dẫn sử dụng bồn nước Sơn Hà đúng cách
+
+  +listProducts('Sản phẩm đã xem', null, [], dataProducts)
+
